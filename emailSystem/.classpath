@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/mci/ei1215/yang_she/appServ/glassfish4/glassfish/lib/jndi-properties.jar"/>
+	<classpathentry kind="lib" path="/mci/ei1215/yang_she/appServ/glassfish4/glassfish/lib/javaee.jar"/>
+	<classpathentry kind="lib" path="/mci/ei1215/yang_she/appServ/glassfish4/glassfish/lib/appserv-rt.jar"/>
+	<classpathentry kind="lib" path="/mci/ei1215/yang_she/appServ/glassfish4/glassfish/lib/gf-client.jar"/>
+	<classpathentry kind="lib" path="/mci/ei1215/yang_she/appServ/glassfish4/glassfish/lib/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
