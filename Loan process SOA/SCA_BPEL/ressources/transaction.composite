@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" targetNamespace="http://invokeTransaction.bpel.tps"  xmlns:impl="http://invokeTransaction.bpel.tps"
+    
+     name="Transaction" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+
+     <component name="TransactionServiceComponent">
+        <implementation.java class="sca_bpel.Transaction" />
+        <service name="transaction">
+			<binding.ws uri="http://localhost:8080/ode/processes/transaction" />
+		</service>
+        <reference name="transactionService" target="processInvokeTransaction"/>
+    </component>
+           
+    <reference name="processInvokeTransaction" 
+    	promote="Transaction/transactionService">
+         <binding.ws wsdlElement="http://localhost:8080/ode/processes/processInvokeTransaction#wsdl.service(processInvokeTransactionService)" />
+                  
+    </reference>
+
+</composite>
